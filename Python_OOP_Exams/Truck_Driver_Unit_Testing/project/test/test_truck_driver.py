@@ -106,3 +106,4 @@ class TruckDriverTests(TestCase):
 
 if __name__ == "__main__":
     main()
+

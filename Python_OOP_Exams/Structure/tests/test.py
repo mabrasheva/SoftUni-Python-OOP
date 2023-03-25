@@ -36,10 +36,6 @@ class MusicianTests(TestCase):
         guitarist = Guitarist("TestName", 17)
         self.assertEqual(17, guitarist.age)
 
-
-
-
-
     def test_musician_learn_new_skill_successfully(self):
         self.assertEqual(f"{self.MUSICIAN_NAME} learned to {self.DRUMMER_SKILL}.",
                          self.drummer.learn_new_skill(self.DRUMMER_SKILL))

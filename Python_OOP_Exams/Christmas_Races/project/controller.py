@@ -28,7 +28,7 @@ class Controller:
     def create_car(self, car_type: str, model: str, speed_limit: int):
         for car in self.cars:
             if car.model == model:
-                return f"Car {model} is already created!"
+                raise Exception(f"Car {model} is already created!")
         if car_type == "MuscleCar":
             new_car = MuscleCar(model, speed_limit)
             self.cars.append(new_car)

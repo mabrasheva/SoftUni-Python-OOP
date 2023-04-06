@@ -94,7 +94,7 @@ class TeamTests(TestCase):
 
         self.new_team = self.team.__add__(self.team2)
         expected = self.new_team
-        self.assertEqual(expected,self.new_team)
+        self.assertEqual(expected, self.new_team)
 
         self.assertEqual(self.NAME + self.team2.name, self.new_team.name)
         self.assertEqual({"Member1": 18, "Member2": 19, "Member3": 20}, self.new_team.members)
